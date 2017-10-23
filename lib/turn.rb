@@ -24,6 +24,11 @@ def position_taken?(board, index)
     end
 end
 
+def input_to_index(number)
+    number = number.to_i
+    number = number - 1
+end
+
 def move(array, index, value = "X")
     array[index] = value
     return array
